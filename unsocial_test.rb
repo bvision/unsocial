@@ -20,6 +20,6 @@ class UnsocialTest < Test::Unit::TestCase
   def test_other_should_respond_with_404
     get '/xxx'
     assert_equal 404, last_response.status
-    assert_match /Not Found/, last_response.body
+    assert_match(/Not Found/, last_response.body)
   end
 end

@@ -2,6 +2,7 @@ source :rubygems
 
 gem 'sinatra'
 
+gem 'rake'
 gem 'thin'
 
 group :test do
