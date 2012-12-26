@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    builder (3.0.4)
     daemons (1.1.9)
     eventmachine (1.0.0)
     listen (0.6.0)
@@ -27,6 +28,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  builder
   rack-test
   rake
   rb-fsevent (~> 0.9.1)

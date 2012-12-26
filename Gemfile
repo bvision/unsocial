@@ -2,6 +2,7 @@ source :rubygems
 
 gem 'sinatra'
 
+gem 'builder'
 gem 'rake'
 gem 'thin'
 

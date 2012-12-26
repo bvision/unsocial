@@ -31,4 +31,9 @@ class UnsocialTest < Test::Unit::TestCase
     get '/google3937f044695dbc67.html'
     assert_equal 200, last_response.status
   end
+
+  def test_sitemap_xml_should_respond_with_200
+    get '/sitemap.xml'
+    assert_equal 200, last_response.status
+  end
 end

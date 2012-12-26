@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: http://bsocial.b-vision.com/sitemap.xml
