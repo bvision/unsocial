@@ -1,4 +1,7 @@
 require 'sinatra'
+require 'rack-canonical-host'
+
+use Rack::CanonicalHost, 'bsocial.b-vision.com' if production?
 
 get '/' do
   redirect to('http://bits.bvision.com/'), 301

@@ -3,6 +3,7 @@ source :rubygems
 gem 'sinatra'
 
 gem 'builder'
+gem 'rack-canonical-host'
 gem 'rake'
 gem 'thin'
 
