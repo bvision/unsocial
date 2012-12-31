@@ -17,9 +17,9 @@ class UnsocialTest < Test::Unit::TestCase
     assert_equal 'http://bits.bvision.com/', last_response.location
   end
 
-  def test_not_found_should_respond_with_404
+  def test_not_found_should_respond_with_410
     get '/xxx'
-    assert_equal 404, last_response.status
+    assert_equal 410, last_response.status
   end
 
   def test_robots_txt_should_respond_with_200

@@ -16,5 +16,5 @@ get '/sitemap.xml' do
 end
 
 not_found do
-  erb :not_found
+  halt 410, erb(:not_found)
 end
