@@ -32,11 +32,6 @@ class UnsocialTest < Test::Unit::TestCase
     assert_equal 200, last_response.status
   end
 
-  def test_bing_site_auth_should_respond_with_200
-    get '/BingSiteAuth.xml'
-    assert_equal 200, last_response.status
-  end
-
   def test_sitemap_xml_should_respond_with_200
     get '/sitemap.xml'
     assert_equal 200, last_response.status
