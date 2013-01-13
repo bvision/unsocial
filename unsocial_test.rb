@@ -1,4 +1,4 @@
-require './unsocial.rb'
+require File.expand_path('../unsocial', __FILE__)
 require 'test/unit'
 require 'rack/test'
 
@@ -22,18 +22,18 @@ class UnsocialTest < Test::Unit::TestCase
     assert_equal 410, last_response.status
   end
 
-  def test_robots_txt_should_respond_with_200
+  def test_robots_txt_should_respond_ok
     get '/robots.txt'
-    assert_equal 200, last_response.status
+    assert last_response.ok?
   end
 
-  def test_google_verification_should_respond_with_200
+  def test_google_verification_should_respond_ok
     get '/google3937f044695dbc67.html'
-    assert_equal 200, last_response.status
+    assert last_response.ok?
   end
 
-  def test_sitemap_xml_should_respond_with_200
+  def test_sitemap_xml_should_respond_ok
     get '/sitemap.xml'
-    assert_equal 200, last_response.status
+    assert last_response.ok?
   end
 end
